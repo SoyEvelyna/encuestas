@@ -1,7 +1,7 @@
 /* Encuestas de satisfacción EvelynA.
    ENDPOINT: URL /exec de la aplicación web de Apps Script (apps-script/Code.gs).
    Vacío = modo prueba: la encuesta funciona pero no guarda nada. */
-const ENDPOINT = '';
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwz51a2OpAvjqFs78_ezeSJVXh-NZt10utpTkxY7K91_pkF4T2GQ8aN_SS8D20aDwHlTw/exec';
 const WEB = 'https://soyevelyna.com/';
 
 const ENCUESTAS = {
