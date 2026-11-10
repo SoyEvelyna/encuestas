@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu experiencia con EvelynA</title>
+<meta name="description" content="Encuesta de satisfacción del acompañamiento de EvelynA.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Tu experiencia con EvelynA">
+<meta property="og:description" content="Contame cómo viviste el acompañamiento. Son 3–5 minutos.">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="stylesheet" href="/estilos.css?v=3">
+</head>
+<body data-encuesta="dueno">
+<header class="header">
+  <a href="https://soyevelyna.com/" target="_blank" rel="noopener" aria-label="EvelynA — ir a la web"><img src="/img/evelyna-logotipo.svg" alt="EvelynA"></a>
+  <div style="display:flex;gap:24px;align-items:center">
+    <span class="micro cuenta" id="cuenta"></span>
+    <a class="micro" href="https://soyevelyna.com/" target="_blank" rel="noopener">soyevelyna.com ↗</a>
+  </div>
+  <div class="prog"><i id="barra"></i></div>
+</header>
+
+<section class="hero">
+  <div class="hero__txt">
+    <p class="micro" id="tag"></p>
+    <h1 class="cond" id="titulo"></h1>
+    <p id="intro"></p>
+    <div class="hero__meta micro" id="meta"></div>
+  </div>
+</section>
+
+<form id="form" novalidate>
+  <div id="preguntas"></div>
+  <div class="cierre">
+    <p class="cierre__nota">Gracias por tomarte este tiempo. Tus respuestas me llegan directo a mí.</p>
+    <button class="btn" id="enviar" type="submit"><span>Enviar respuestas</span> →</button>
+    <p class="error" id="error" hidden>No pude enviar tus respuestas. Revisá tu conexión y tocá Reintentar: no se pierde nada de lo que escribiste.</p>
+  </div>
+</form>
+
+<section class="gracias" id="gracias" hidden>
+  <div>
+    <img class="gracias__iso" src="/img/evelyna-isologo.svg" alt="">
+    <h2 class="cond">¡Gracias!</h2>
+    <p>Tus respuestas ya me llegaron. Cada una me ayuda a seguir construyendo un acompañamiento que genere valor real.</p>
+    <a class="btn" href="https://soyevelyna.com/" target="_blank" rel="noopener">Visitá soyevelyna.com →</a>
+  </div>
+</section>
+
+<footer class="pie">
+  <a href="https://soyevelyna.com/" target="_blank" rel="noopener"><img src="/img/evelyna-logotipo.svg" alt="EvelynA"></a>
+  <nav class="micro">
+    <a href="https://soyevelyna.com/" target="_blank" rel="noopener">soyevelyna.com</a>
+    <a href="https://www.instagram.com/soy.evelyna/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/evelyn-abrahan-614675173/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</footer>
+<script src="/encuestas.js?v=3"></script>
+</body>
+</html>
