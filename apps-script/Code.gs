@@ -13,9 +13,8 @@ const HOJAS = {
     nombre: 'Dueño / Líder',
     columnas: [
       ['fecha', 'Fecha'],
-      ['cliente', 'Cliente'],
-      ['nombre', 'Nombre'],
       ['negocio', 'Negocio'],
+      ['nombre', 'Nombre'],
       ['q1', '1. Valor del acompañamiento (1-5)'],
       ['q2', '2. Dónde generó más valor'],
       ['q2_otro', '2. Otro'],
@@ -34,7 +33,8 @@ const HOJAS = {
     nombre: 'Equipo',
     columnas: [
       ['fecha', 'Fecha'],
-      ['cliente', 'Cliente'],
+      ['negocio', 'Negocio'],
+      ['nombre', 'Nombre'],
       ['q1', '1. Utilidad para el trabajo (1-5)'],
       ['q2', '2. Qué aportó'],
       ['q2_otro', '2. Otro'],
@@ -45,7 +45,7 @@ const HOJAS = {
       ['q4_cercania', '4. Cercanía y predisposición'],
       ['q5', '5. Qué podría mejorar'],
       ['q6', '6. Qué le diría a alguien (testimonio)'],
-      ['testimonio', 'Autoriza testimonio anónimo']
+      ['testimonio', 'Autoriza testimonio (anónimo)']
     ]
   }
 };
@@ -90,12 +90,18 @@ function hoja_(conf) {
   let hoja = libro.getSheetByName(conf.nombre);
   if (!hoja) {
     hoja = libro.insertSheet(conf.nombre);
-    const titulos = conf.columnas.map(function (c) { return c[1]; });
+    hoja.setFrozenRows(1);
+    hoja.getRange('A:A').setNumberFormat('dd/mm/yyyy hh:mm');
+  }
+  // Si cambian las preguntas, la fila de títulos se actualiza sola.
+  const titulos = conf.columnas.map(function (c) { return c[1]; });
+  const ancho = Math.max(titulos.length, hoja.getLastColumn(), 1);
+  const actuales = hoja.getRange(1, 1, 1, ancho).getValues()[0];
+  if (actuales.slice(0, titulos.length).join('|') !== titulos.join('|')) {
+    hoja.getRange(1, 1, 1, ancho).clearContent();
     hoja.getRange(1, 1, 1, titulos.length).setValues([titulos])
       .setFontWeight('bold').setBackground('#212121').setFontColor('#FAFAFA').setWrap(true);
-    hoja.setFrozenRows(1);
     hoja.setColumnWidths(1, titulos.length, 180);
-    hoja.getRange('A:A').setNumberFormat('dd/mm/yyyy hh:mm');
   }
   return hoja;
 }

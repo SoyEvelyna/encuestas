@@ -79,8 +79,13 @@ textarea{width:100%;border:0;border-bottom:1.5px solid var(--ink);background:tra
 textarea:focus,.otro:focus,.campo input:focus{border-bottom-width:3px}
 textarea::placeholder,input::placeholder{color:#9a9a9a}
 
-.dosc{display:grid;grid-template-columns:1fr 1fr;gap:24px 40px}
-.campo span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.datos{display:grid;gap:32px;max-width:640px}
+.campo .bloques{margin-top:12px}
+.q.-quien{padding:28px 0}
+.q.-quien h2{font-size:20px}
+.cambiar{background:none;border:0;border-bottom:1px solid var(--ink);color:var(--ink);cursor:pointer;margin-top:12px;padding:2px 0}
+.q.-datos.-falta .q__num{color:var(--hazard)}
+.campo>span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--muted)}
 .campo input{width:100%;border:0;border-bottom:1.5px solid var(--ink);background:transparent;padding:10px 0;font-size:19px;outline:0}
 
 /* ── Enviar ── */
@@ -113,7 +118,6 @@ body.-gracias .prog i{width:100%!important}
   .q{grid-template-columns:1fr;gap:14px}
   .q__num{font-size:44px}
   .matriz .fila{grid-template-columns:1fr;gap:10px}
-  .dosc{grid-template-columns:1fr}
   .header .cuenta{display:none}
   .btn{width:100%;justify-content:center}
 }
