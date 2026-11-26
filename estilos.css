@@ -126,6 +126,15 @@ body.-gracias .prog i{width:100%!important}
 .-compacto .gracias h2{font-size:clamp(48px,7vw,104px)}
 .-compacto .gracias p{font-size:clamp(16px,1.4vw,20px);margin:18px 0 28px}
 .-compacto .gracias__iso{width:52px;margin-bottom:20px}
+.-compacto .hero{text-align:center}
+.-compacto .hero__txt{max-width:960px;margin:0 auto}
+.-compacto .hero__iso{width:64px;margin:0 auto 22px}
+.-compacto .hero p{margin-left:auto;margin-right:auto}
+.-compacto .hero__meta{justify-content:center}
+.-compacto form{max-width:960px}
+.-compacto .gracias{justify-content:center;text-align:center}
+.-compacto .gracias__iso{margin-left:auto;margin-right:auto}
+.-compacto .gracias p{margin-left:auto;margin-right:auto}
 @media (max-width:760px){
   .-compacto .q{grid-template-columns:1fr;gap:10px}
   .-compacto .q__num{font-size:36px}

@@ -24,7 +24,7 @@ const TESTIMONIO = 'Autorizo a EvelynA a usar mi respuesta a la pregunta 3 como 
   const btn = $('#enviar');
 
   $('#tag').textContent = 'Taller Desafío 2026 · Encuesta';
-  $('#titulo').innerHTML = '<span>¿Cómo te fue</span><span>en el <mark>taller</mark>?</span>';
+  $('#titulo').innerHTML = '¿Cómo te fue en el taller?';
   $('#intro').textContent = 'Gracias por estar. Tu mirada me ayuda a mejorar los próximos encuentros y a entender mejor qué necesitás para avanzar.';
   $('#meta').innerHTML = '<span>Tiempo estimado: 2 minutos</span>';
   $('.cierre__nota').textContent = 'Gracias por tomarte este tiempo. Tus respuestas me llegan directo a mí.';
