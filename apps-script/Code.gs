@@ -47,6 +47,22 @@ const HOJAS = {
       ['q6', '6. Qué le diría a alguien (testimonio)'],
       ['testimonio', 'Autoriza testimonio (anónimo)']
     ]
+  },
+  taller: {
+    nombre: 'Taller',
+    columnas: [
+      ['fecha', 'Fecha'],
+      ['nombre', 'Nombre'],
+      ['email', 'Email'],
+      ['q1', '1. Utilidad del taller (1-5)'],
+      ['q2', '2. Qué se lleva'],
+      ['q2_otro', '2. Otro'],
+      ['q3', '3. Lo que más le sirvió (testimonio)'],
+      ['q4', '4. Qué la/lo frena hoy'],
+      ['q5', '5. Cómo quiere seguir'],
+      ['q6', '6. Qué mejoraría del taller'],
+      ['testimonio', 'Autoriza testimonio']
+    ]
   }
 };
 
