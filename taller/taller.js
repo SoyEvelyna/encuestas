@@ -123,9 +123,6 @@ const TESTIMONIO = 'Autorizo a EvelynA a usar mi respuesta a la pregunta 3 como 
     if (SIGUE_CON_EVE.includes(d.q5)) {
       $('#gracias-txt').textContent = '¡Qué bueno que quieras seguir! Elegí un horario y charlamos 30 minutos sobre tu ' +
         (d.q5 === SIGUE_CON_EVE[1] ? 'negocio' : 'emprendimiento') + '.';
-      const b = $('#gracias-btn');
-      b.href = AGENDA;
-      b.textContent = 'Agendar una charla conmigo →';
     }
     document.body.classList.add('-gracias');
     $('#gracias').hidden = false;

@@ -107,6 +107,30 @@ textarea::placeholder,input::placeholder{color:#9a9a9a}
 body.-gracias form,body.-gracias .hero{display:none}
 body.-gracias .prog i{width:100%!important}
 
+/* ── Encuesta del taller: escala más chica ── */
+.-compacto .hero{padding:clamp(36px,6vw,72px) var(--g) clamp(36px,5vw,64px)}
+.-compacto .hero h1{font-size:clamp(36px,4.6vw,68px);margin:14px 0 20px}
+.-compacto .hero p{font-size:clamp(16px,1.3vw,18px)}
+.-compacto .hero__meta{margin-top:20px}
+.-compacto .q{grid-template-columns:clamp(48px,8vw,96px) 1fr;padding:clamp(32px,4.5vw,52px) 0}
+.-compacto .q__num{font-size:clamp(36px,4.5vw,60px)}
+.-compacto .q h2{font-size:clamp(19px,1.8vw,24px)}
+.-compacto .q__cuerpo>*:nth-child(2):not(.ayuda),.-compacto .q__cuerpo .ayuda+*{margin-top:20px}
+.-compacto .escala span{height:52px;font-size:22px}
+.-compacto .caja{font-size:16px}
+.-compacto .bloques span{padding:14px 20px;font-size:15px}
+.-compacto textarea,.-compacto .campo input{font-size:17px}
+.-compacto textarea{min-height:72px}
+.-compacto .cierre{padding:clamp(40px,6vw,64px) 0 clamp(56px,7vw,88px)}
+.-compacto .btn{padding:18px 26px;font-size:13px}
+.-compacto .gracias h2{font-size:clamp(48px,7vw,104px)}
+.-compacto .gracias p{font-size:clamp(16px,1.4vw,20px);margin:18px 0 28px}
+.-compacto .gracias__iso{width:52px;margin-bottom:20px}
+@media (max-width:760px){
+  .-compacto .q{grid-template-columns:1fr;gap:10px}
+  .-compacto .q__num{font-size:36px}
+}
+
 /* ── Pie ── */
 .pie{background:var(--ink);color:var(--paper);padding:40px var(--g);display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
 .pie img{height:26px;filter:invert(1)}
